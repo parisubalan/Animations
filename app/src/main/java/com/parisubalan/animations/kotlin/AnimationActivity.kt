@@ -26,7 +26,7 @@ class AnimationActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.animation_layout)
         initialization()
-        clickLister();
+        clickLister()
     }
 
     private fun initialization()
@@ -66,7 +66,7 @@ class AnimationActivity : AppCompatActivity(), View.OnClickListener {
             R.id.fadeBtn-> animationLoading(this, R.anim.fade_animation)
             R.id.moveBtn-> animationLoading(this, R.anim.move_animation)
             R.id.slideBtn-> animationLoading(this, R.anim.slide_animation)
-            R.id.zoomBtn-> animationLoading(this, R.anim.zoom_animation)
+            R.id.zoomBtn-> animationLoading(this, R.anim.zoom_in_animation)
             R.id.stopBtn-> imageView.clearAnimation()
 
         }
